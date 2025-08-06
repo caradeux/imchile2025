@@ -1,0 +1,104 @@
+{
+  "mcpServers": {
+    "playwright-smithery": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@executeautomation/playwright-mcp-server",
+        "--key",
+        "002e0e92-93ad-4bbc-9837-f0d9e6538951",
+        "--profile",
+        "ltd-nightingale-PZwSrQ"
+      ],
+      "env": {},
+      "disabled": false,
+      "autoApprove": [
+        "playwright_navigate",
+        "playwright_screenshot",
+        "playwright_get_visible_text",
+        "playwright_get_visible_html",
+        "playwright_fill",
+        "playwright_click",
+        "playwright_evaluate"
+      ]
+    },
+    "memory": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "env": {},
+      "disabled": false,
+      "autoApprove": [
+        "mcp_memory_read_graph",
+        "mcp_memory_search_nodes",
+        "mcp_memory_create_entities",
+        "search_nodes"
+      ]
+    },
+    "puppeteer": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-puppeteer"
+      ],
+      "env": {},
+      "disabled": false,
+      "autoApprove": [
+        "mcp_puppeteer_puppeteer_navigate",
+        "mcp_puppeteer_puppeteer_screenshot",
+        "mcp_puppeteer_puppeteer_get_visible_text",
+        "puppeteer_navigate",
+        "puppeteer_screenshot",
+        "puppeteer_fill",
+        "puppeteer_click",
+        "puppeteer_evaluate"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {},
+      "disabled": false,
+      "autoApprove": [
+        "mcp_sequential_thinking_sequentialthinking"
+      ]
+    },
+    "coolify": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "coolify-mcp-server"
+      ],
+      "env": {
+        "COOLIFY_BASE_URL": "https://tu-coolify-url",
+        "COOLIFY_TOKEN": "${input:coolify_token}"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "get_version",
+        "health_check",
+        "list_servers",
+        "list_applications",
+        "deploy",
+        "create_private_key"
+      ]
+    },
+    "Context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {},
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
