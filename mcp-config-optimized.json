@@ -83,8 +83,9 @@
           "coolify-mcp-server"
         ],
         "env": {
-          "COOLIFY_BASE_URL": "https://tu-coolify-url", 
-          "COOLIFY_TOKEN": "${input:coolify_token}"
+          "COOLIFY_BASE_URL": "http://192.168.1.12:8000", 
+          "COOLIFY_EMAIL": "caradeux2010@gmail.com",
+          "COOLIFY_PASSWORD": "Karadox9.."
         },
         "disabled": false,
         "autoApprove": [

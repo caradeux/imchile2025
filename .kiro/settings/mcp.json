@@ -77,8 +77,8 @@
         "coolify-mcp-server"
       ],
       "env": {
-        "COOLIFY_BASE_URL": "https://tu-coolify-url",
-        "COOLIFY_TOKEN": "${input:coolify_token}"
+        "COOLIFY_BASE_URL": "http://192.168.1.12:8000",
+        "COOLIFY_TOKEN": "1|aLcwCbNAqdbG0PgcHwxKTO14aKyvKVVdQ31ZtVxJb2a2c3b6"
       },
       "disabled": false,
       "autoApprove": [

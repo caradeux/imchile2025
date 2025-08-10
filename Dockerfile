@@ -3,7 +3,7 @@
 # =========================================
 # Stage 1: Build Stage - Compile React App
 # =========================================
-FROM node:22.14.0-alpine AS builder
+FROM node:18-alpine AS builder
 
 # Set environment variables for optimization
 ENV NODE_ENV=production
@@ -16,7 +16,7 @@ WORKDIR /app
 # Install dependencies first for better caching
 COPY package.json package-lock.json ./
 RUN --mount=type=cache,target=/root/.npm \
-    npm ci --only=production --no-audit --no-fund
+    npm ci --no-audit --no-fund
 
 # Copy source code
 COPY . .
