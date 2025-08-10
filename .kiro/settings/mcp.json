@@ -21,7 +21,9 @@
         "playwright_get_visible_html",
         "playwright_fill",
         "playwright_click",
-        "playwright_evaluate"
+        "playwright_evaluate",
+        "playwright_post",
+        "playwright_get"
       ]
     },
     "memory": {
@@ -78,7 +80,7 @@
       ],
       "env": {
         "COOLIFY_BASE_URL": "http://192.168.1.12:8000",
-        "COOLIFY_TOKEN": "1|aLcwCbNAqdbG0PgcHwxKTO14aKyvKVVdQ31ZtVxJb2a2c3b6"
+        "COOLIFY_TOKEN": "2|XOxAWt7porM9r2ztfp083q2xosbIBtEBGJIAuU3q2a221777"
       },
       "disabled": false,
       "autoApprove": [
@@ -87,7 +89,8 @@
         "list_servers",
         "list_applications",
         "deploy",
-        "create_private_key"
+        "create_private_key",
+        "create_application"
       ]
     },
     "Context7": {

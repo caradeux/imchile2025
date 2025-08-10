@@ -15,7 +15,7 @@ services:
       - coolify.managed=true
       - coolify.type=application
       - traefik.enable=true
-      - traefik.http.routers.imc-website.rule=Host(`192.168.1.12`)
+      - traefik.lhttp.routers.imc-website.rule=Host(`192.168.1.12`)
       - traefik.http.routers.imc-website.entrypoints=web
       - traefik.http.services.imc-website.loadbalancer.server.port=8080
       

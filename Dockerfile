@@ -33,15 +33,15 @@ FROM nginxinc/nginx-unprivileged:alpine3.21 AS production
 USER nginx
 
 # Copy custom Nginx configuration
-COPY nginx.conf /etc/nginx/nginx.conf
+# COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy built React app from builder stage
 COPY --chown=nginx:nginx --from=builder /app/dist /usr/share/nginx/html
 
 # Copy additional static files
-COPY --chown=nginx:nginx public/.htaccess /usr/share/nginx/html/
-COPY --chown=nginx:nginx public/sitemap.xml /usr/share/nginx/html/
-COPY --chown=nginx:nginx public/robots.txt /usr/share/nginx/html/
+# COPY --chown=nginx:nginx public/.htaccess /usr/share/nginx/html/
+# COPY --chown=nginx:nginx public/sitemap.xml /usr/share/nginx/html/
+# COPY --chown=nginx:nginx public/robots.txt /usr/share/nginx/html/
 
 # Create health check endpoint
 RUN echo '<!DOCTYPE html><html><head><title>Health Check</title></head><body><h1>OK</h1></body></html>' > /usr/share/nginx/html/health
